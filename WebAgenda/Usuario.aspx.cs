@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace WebAgenda
@@ -12,6 +8,25 @@ namespace WebAgenda
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void SqlDataSourceUsuariosInserted(object sender, SqlDataSourceStatusEventArgs e)
+        {
+            Validate(e);
+        }
+
+        protected void SqlDataSourceUsuariosUpdated(object sender, SqlDataSourceStatusEventArgs e)
+        {
+            Validate(e);
+        }
+
+        private void Validate(SqlDataSourceStatusEventArgs e)
+        {
+            if (e.Exception != null)
+            {
+                Label1.Text = e.Exception.Message;
+                e.ExceptionHandled = true;
+            }
         }
     }
 }

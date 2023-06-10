@@ -126,7 +126,7 @@
             </tr>
         </SelectedItemTemplate>
     </asp:ListView>
-    <asp:SqlDataSource ID="SqlDataSourceUsuario" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Usuario] WHERE [Email] = @Email" InsertCommand="INSERT INTO [Usuario] ([Nome], [Email], [Senha]) VALUES (@Nome, @Email, @Senha)" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Usuario]" UpdateCommand="UPDATE [Usuario] SET [Nome] = @Nome, [Senha] = @Senha WHERE [Email] = @Email">
+    <asp:SqlDataSource ID="SqlDataSourceUsuario" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Usuario] WHERE [Email] = @Email" InsertCommand="INSERT INTO [Usuario] ([Nome], [Email], [Senha]) VALUES (@Nome, @Email, @Senha)" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Usuario]" UpdateCommand="UPDATE [Usuario] SET [Nome] = @Nome, [Senha] = @Senha WHERE [Email] = @Email" OnInserted="SqlDataSourceUsuariosInserted" OnUpdated="SqlDataSourceUsuariosUpdated">
         <DeleteParameters>
             <asp:Parameter Name="Email" Type="String" />
         </DeleteParameters>
@@ -141,4 +141,6 @@
             <asp:Parameter Name="Email" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
+<br />
+<asp:Label ID="Label1" runat="server" Font-Size="Large"></asp:Label>
 </asp:Content>
