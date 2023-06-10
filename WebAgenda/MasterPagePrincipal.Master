@@ -35,7 +35,7 @@
             </div>
         </main>
         <footer>
-            <p>Site desenvolvido em Asp.Net Web Application (Web Forms) <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://www.google.com">Teste de Link</asp:HyperLink></p>
+            <p>Site desenvolvido em Asp.Net Web Application (Web Forms). <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://www.google.com">Teste de Link</asp:HyperLink></p>
         </footer>
     </form>
 </body>
