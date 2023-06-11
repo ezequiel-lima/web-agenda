@@ -50,7 +50,7 @@ namespace WebAgenda
             }
             else
             {
-                LabelInfo.Text = "Email ou senha invalida";
+                Response.Write("<script> alert('email ou senha invalido'); </script>");
             }
             sqlConnection.Close();
         }

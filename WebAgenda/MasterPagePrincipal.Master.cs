@@ -15,7 +15,6 @@ namespace WebAgenda
             {
                 Response.Redirect("~/Login.aspx");
             }
-
         }
     }
 }

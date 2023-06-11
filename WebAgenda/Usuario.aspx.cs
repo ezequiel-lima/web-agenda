@@ -24,6 +24,7 @@ namespace WebAgenda
         {
             if (e.Exception != null)
             {
+                Response.Write($"<script> alert('{e.Exception.Message}') </script>");
                 Label1.Text = e.Exception.Message;
                 e.ExceptionHandled = true;
             }
