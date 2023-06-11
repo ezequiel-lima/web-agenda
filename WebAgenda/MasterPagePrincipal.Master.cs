@@ -11,6 +11,10 @@ namespace WebAgenda
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.Cookies["login"] is null)
+            {
+                Response.Redirect("~/Login.aspx");
+            }
 
         }
     }

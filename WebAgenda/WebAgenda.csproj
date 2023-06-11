@@ -74,6 +74,7 @@
     <Content Include="Contato.aspx" />
     <Content Include="Imagens\image.png" />
     <Content Include="Index.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Usuario.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -91,6 +92,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPagePrincipal.Master.cs">
       <DependentUpon>MasterPagePrincipal.Master</DependentUpon>

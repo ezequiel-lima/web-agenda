@@ -3,28 +3,28 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Label ID="Label2" runat="server" Text="Inserir novo contato"></asp:Label>
-    <br />
-    <br />
-    <asp:Label ID="LabelNome" runat="server" Text="Nome"></asp:Label>
-    <br />
-    <asp:TextBox ID="TxbNome" runat="server"></asp:TextBox>
-    <br />
-    <br />
-    <asp:Label ID="LabelEmail" runat="server" Text="Email"></asp:Label>
-    <br />
-    <asp:TextBox ID="TxbEmail" runat="server"></asp:TextBox>
-    <br />
-    <br />
-    <asp:Label ID="LabelTelefone" runat="server" Text="Telefone"></asp:Label>
-    <br />
-    <asp:TextBox ID="TxbTelefone" runat="server"></asp:TextBox>
-    <br />
-    <br />
-    <asp:Button ID="ButtonInserir" runat="server" OnClick="ButtonInserir_Click" Text="Inserir" />
-    <br />
-    <br />
-    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Large" Text="Lista de Contatos"></asp:Label>
-    <br />
+<br />
+<br />
+<asp:Label ID="LabelNome" runat="server" Text="Nome"></asp:Label>
+<br />
+<asp:TextBox ID="TxbNome" runat="server"></asp:TextBox>
+<br />
+<br />
+<asp:Label ID="LabelEmail" runat="server" Text="Email"></asp:Label>
+<br />
+<asp:TextBox ID="TxbEmail" runat="server"></asp:TextBox>
+<br />
+<br />
+<asp:Label ID="LabelTelefone" runat="server" Text="Telefone"></asp:Label>
+<br />
+<asp:TextBox ID="TxbTelefone" runat="server"></asp:TextBox>
+<br />
+<br />
+<asp:Button ID="ButtonInserir" runat="server" OnClick="ButtonInserir_Click" Text="Inserir" />
+<br />
+<br />
+<asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Large" Text="Lista de Contatos"></asp:Label>
+<br />
 <br />
 <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Id" DataSourceID="SqlDataSourceContatos" ForeColor="#333333" GridLines="None">
     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
